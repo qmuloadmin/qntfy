@@ -1,0 +1,16 @@
+goos: linux
+goarch: amd64
+pkg: github.com/qmuloadmin/qntfy/stats
+BenchmarkUpdateDuplicate-8              20000000                85.0 ns/op             0 B/op          0 allocs/op
+BenchmarkCheckKeyword-8                 20000000                92.9 ns/op             0 B/op          0 allocs/op
+BenchmarkE2ENormalFiles-8                    300           4703189 ns/op          807857 B/op       4331 allocs/op
+BenchmarkE2ELargeFiles-8                     100          11355616 ns/op         2074808 B/op      10729 allocs/op
+BenchmarkE2EMoreFilesThanCores-8             200           6393201 ns/op         1084879 B/op       6078 allocs/op
+BenchmarkE2EParagraphs-8                    1000           1390401 ns/op          296716 B/op        263 allocs/op
+BenchmarkNormalFile-8                       2000           1066816 ns/op          169491 B/op       1095 allocs/op
+BenchmarkLargeFile-8                         200           5998378 ns/op          958604 B/op       6467 allocs/op
+BenchmarkParagraphFile-8                    3000            486066 ns/op           94128 B/op         83 allocs/op
+BenchmarkProcessNormalLine-8              500000              2334 ns/op             288 B/op          2 allocs/op
+BenchmarkProcessParagraphLine-8           100000             18404 ns/op            2464 B/op          2 allocs/op
+PASS
+ok      github.com/qmuloadmin/qntfy/stats       30.808s
